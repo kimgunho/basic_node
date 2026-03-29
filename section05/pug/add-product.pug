@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body
+        header  
+            nav 
+                ul
+                    li
+                        a(href="/") Home
+                    li
+                        a(href="/admin/add-product") Add Product
+        main
+            h1 Add Productzzzz
+            form(action="/admin/products" method="POST")
+                input(type="text" name="title" placeholder="Product Name")
+                button(type="submit") Add Product
